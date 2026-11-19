@@ -15,8 +15,5 @@ __pycache__/
 data/
 petshop_db/
 
-# Manual tests (temporary)
-tests/
-
 # OS files
 .DS_Store
