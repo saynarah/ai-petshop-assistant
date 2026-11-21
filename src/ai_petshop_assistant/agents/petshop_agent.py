@@ -25,8 +25,8 @@ class PetShopAgent:
     def __init__( 
             self,  
             vectorstore: VectorStore,
-            chunk_size: int = 1000,
-            chunk_overlap: int = 200
+            chunk_size: int = 500,
+            chunk_overlap: int = 100
     ):
         
         self.embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
@@ -66,11 +66,13 @@ class PetShopAgent:
 
         return len(chunks)
     
-    def _build_retriever(self, use_advanced: bool = False):
+    def _build_retriever(self, 
+                         use_advanced: bool = False,
+                         k: int = 3):
 
         base_retriever = self.vectorstore.as_retriever(
             search_type="similarity",
-            search_kwargs={"k": 3}
+            search_kwargs={"k": k}
         )
 
         if not use_advanced:
@@ -88,10 +90,12 @@ class PetShopAgent:
 
     def _build_history_aware_retriever(
             self,
-            use_advanced: bool = False):
+            use_advanced: bool = False,
+            k: int = 3):
 
         base_retriever = self._build_retriever(
-            use_advanced=use_advanced
+            use_advanced=use_advanced,
+            k=k
         )
 
         history_aware_retriever = create_history_aware_retriever(
@@ -120,7 +124,6 @@ class PetShopAgent:
                 sources.add(metadata["source"])
         return sorted(list(sources))
     
-
     def ask(self, customer_id: str, question: str, message_id: str = None, use_advanced: bool = False) -> ChatResponseStructured:
         #Ask a question against the indexed documents
 
