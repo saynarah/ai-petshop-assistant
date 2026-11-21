@@ -27,14 +27,14 @@ class AgentResponse(BaseModel):
     sources: list[str] = Field(default_factory=list)
     needs_human_review: bool
 
-    @model_validator(mode="after")
-    def validate_review(self):
-        self.needs_human_review = (
-            self.confidence in (
-                "medium", 
-                "low")
-        )
-        return self
+    # @model_validator(mode="after")
+    # def validate_review(self):
+    #     self.needs_human_review = (
+    #         self.confidence in (
+    #             "medium", 
+    #             "low")
+    #     )
+    #     return self
 
 class ChatResponseStructured(AgentResponse):
     message_id: str

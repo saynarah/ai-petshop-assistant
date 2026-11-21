@@ -1,0 +1,89 @@
+id,category,question,answer,expected_handoff,predicted_handoff,correct,confidence
+F01,factual,Qual é o preço do banho para um Shih Tzu de 8 kg?,"O preço do banho padrão para um Shih Tzu de 8 kg, que é considerado de pequeno porte, é de **R$ 55**.",False,False,True,high
+F02,factual,Quanto custa a tosa higiênica avulsa para um cachorro de 18 kg?,"Para um cachorro de 18 kg, que se enquadra na categoria de médio porte, o custo da tosa higiênica avulsa é de **R$ 55**. Este valor é definido na tabela de preços para serviços de tosa higiênica. 
+
+Se precisar de mais informações ou quiser agendar, estou à disposição!",False,False,True,high
+F03,factual,O que está incluído no banho padrão?,"O banho padrão para cães inclui:
+- Avaliação visual da pelagem no recebimento
+- Shampoo de uso cosmético compatível com o tipo de pelo
+- Enxágue
+- Secagem supervisionada
+- Escovação simples
+- Limpeza externa das orelhas (superficial, não substitui procedimento clínico)
+
+A equipe pode interromper o serviço se identificar comportamento que impossibilite o manejo seguro.
+
+Fonte: 01_servicos_banho_tosa.md",False,False,True,high
+F04,factual,A PetStop abre no sábado? Até que horas?,"Sim, a PetStop abre aos sábados, das **8h às 14h**.",False,False,True,high
+F05,factual,O que muda entre tosa higiênica e tosa completa?,"A tosa higiênica é um aparo localizado que modifica apenas regiões específicas da pelagem, facilitando a higiene, sem alterar completamente o comprimento do pelo. Por outro lado, a tosa completa envolve a modificação do comprimento do pelo do corpo, podendo utilizar máquina ou tesoura, dependendo da pelagem e do comportamento do animal. A tosa completa resulta em uma mudança mais significativa na aparência do pet em comparação com a tosa higiênica.
+
+Para mais detalhes, você pode consultar os seguintes documentos:
+- 04_cuidados_apos_tosa_bem_estar.md
+- 01_servicos_banho_tosa.md",False,False,True,high
+F06,factual,Quais são as formas de pagamento?,"As formas de pagamento aceitas são Pix, cartão de débito e cartão de crédito. A possibilidade de parcelamento é analisada no momento do pagamento, mas não há informações fixas sobre o número de parcelas ou valor mínimo.",False,False,True,high
+F07,factual,Quanto tempo dura o banho de um cachorro médio?,"O banho de um cachorro médio dura entre 60 a 90 minutos. Esse intervalo é uma estimativa e não representa um horário de retirada garantido, mas a equipe informa a previsão no check-in.",False,False,True,high
+F08,factual,Qual o critério de classificação de porte por peso?,"A classificação de porte por peso é a seguinte:
+- Pequeno porte: até 10 kg
+- Médio porte: acima de 10 kg até 25 kg
+- Grande porte: acima de 25 kg
+Essa classificação é usada para orçamentos e não é uma recomendação clínica. Se houver dúvidas sobre a classificação, a equipe pode confirmar presencialmente.",False,False,True,high
+M01,multi_documento,Quanto fica banho e tosa higiênica para meu Shih Tzu de 8 kg e preciso agendar?,"Para o seu Shih Tzu de 8 kg, que é considerado um cão pequeno, o custo do banho e da tosa higiênica é de R$ 55 (banho) + R$ 40 (tosa higiênica), totalizando **R$ 95**. 
+
+Sim, é necessário agendar o atendimento, pois os serviços são realizados somente com agendamento confirmado. A equipe irá confirmar o orçamento antes de iniciar os serviços.
+
+Se precisar de ajuda para agendar, é só avisar!",False,False,True,high
+M02,multi_documento,Posso agendar uma tosa completa no domingo e quanto custa?,"Infelizmente, não tenho informações específicas sobre a disponibilidade de agendamentos para tosa completa no domingo. Além disso, o preço da tosa completa é definido sob orçamento, o que significa que a equipe irá avaliar o seu pet e fornecer um valor antes de iniciar o serviço. Recomendo entrar em contato diretamente com a loja para confirmar a disponibilidade e obter um orçamento específico para a tosa completa.
+
+Se precisar de mais informações, estou aqui para ajudar!",False,True,False,medium
+M03,multi_documento,Quero banho e hidratação para meu cão médio de 18 kg. Qual a referência de preço e a finalidade da hidratação?,"Para um cão médio de 18 kg, o preço de referência para o banho é de R$ 80 e a hidratação cosmética adicional é de R$ 35. Portanto, a soma total seria R$ 80 + R$ 35 = **R$ 115**. 
+
+A hidratação realizada pelo pet shop tem finalidade estética e não trata alergias, infecções, feridas ou outros problemas clínicos. Se você deseja escolher um produto por motivo de saúde, é recomendado consultar um profissional veterinário.
+
+**Fontes:** 02_tabela_precos_pacotes.md, 04_cuidados_apos_tosa_bem_estar.md",False,False,True,high
+M04,multi_documento,Meu Golden Retriever pesa 28 kg. Quanto custa banho e quanto tempo pode levar?,"Para o seu Golden Retriever de 28 kg, o custo do banho é de R$ 80. O tempo estimado para o banho é de 90 a 130 minutos. Lembre-se de que esses tempos são apenas estimativas e a equipe informará a previsão no check-in.
+
+**Fontes:** 01_servicos_banho_tosa.md, 02_tabela_precos_pacotes.md",False,False,True,high
+M05,multi_documento,Tenho dois cães e vou pagar no Pix. Existe desconto e preciso confirmar o horário?,"Não existe desconto fixo para pagamentos via Pix, e não há desconto específico para ter dois cães da mesma família. As campanhas temporárias podem existir, mas somente a equipe tem acesso à lista atual de promoções, então não posso prometer um desconto.
+
+Quanto à confirmação do horário, você pode solicitar um agendamento informando o nome dos cães, espécie, peso aproximado, serviço desejado, dia e faixa de horário de preferência. Essas informações permitirão registrar sua solicitação, mas não garantem que haja vaga confirmada. A equipe precisará consultar a agenda e retornará com uma opção disponível.",False,True,False,high
+M06,multi_documento,Atrasarei 20 minutos para o banho. O serviço é cancelado automaticamente? O que devo fazer?,"Se você atrasar mais de 15 minutos, o serviço pode precisar ser reagendado, mas isso não significa que será cancelado automaticamente. É importante que você comunique o atraso à equipe e aguarde orientações sobre como proceder. 
+
+Para mais informações, você pode consultar o documento sobre atrasos e cancelamentos. 
+
+Fonte: 03_agendamento_cancelamento.md",False,False,True,high
+H01,historico,"E a tosa higiênica para ele, quanto fica?","A tosa higiênica para o Thor, que é um cão de pequeno porte, custa R$ 40. Se você também quiser incluir o banho, o total seria R$ 95 (R$ 55 pelo banho + R$ 40 pela tosa higiênica). Lembre-se de que esses valores são somas de serviços e não incluem descontos automáticos. A equipe confirmará o orçamento antes de iniciar os serviços.",False,False,True,high
+H02,historico,E quanto tempo demora esse banho?,"O tempo estimado para o banho de um cão de porte médio, como a sua cadela Luna que pesa 18 kg, é de 60 a 90 minutos. Lembre-se que esses intervalos são apenas estimativas e a equipe informará a previsão no check-in.",False,False,True,high
+H03,historico,Posso mudar para sábado?,"Para mudar sua solicitação de banho para sábado, você precisará entrar em contato com a equipe para confirmar a nova data, pois a remarcação deve ser feita diretamente com eles. Eles irão verificar a disponibilidade e retornar com uma opção. Lembre-se de que a solicitação inicial não garante uma vaga confirmada até que a equipe faça essa verificação. 
+
+Se precisar de mais informações sobre o processo de agendamento, estou aqui para ajudar!",True,True,True,high
+H04,historico,E o valor dela?,"O valor da tosa completa para a sua cachorra depende do porte dela e da avaliação da pelagem. Para cães de pequeno e médio porte, o preço é sob orçamento, ou seja, será definido após a avaliação da equipe. Para cães de grande porte, também é sob orçamento. A equipe confirmará o valor antes de iniciar o serviço.",False,True,False,high
+H05,historico,E posso fazer os dois na mesma visita?,"Sim, você pode fazer o banho e a tosa higiênica na mesma visita. No entanto, não há desconto automático para essa combinação. Para um cão pequeno, o custo total seria de R$ 95, e para um cão médio, seria R$ 135. A equipe confirmará o orçamento antes de iniciar os serviços.",False,False,True,high
+U01,informacao_indisponivel,Tem horário livre amanhã às 10h para banho?,"Desculpe, mas não consigo verificar a disponibilidade de horários para agendamentos. Recomendo que você entre em contato diretamente com a equipe do PetStop para confirmar se há horário livre amanhã às 10h para banho. Lembre-se que os atendimentos são realizados somente com agendamento confirmado.",True,True,True,low
+U02,informacao_indisponivel,Quanto custa uma consulta veterinária?,"Desculpe, mas não tenho acesso ao preço de consultas veterinárias. Para obter essa informação, é necessário entrar em contato com a equipe responsável da loja. Eles poderão fornecer os detalhes sobre preços e disponibilidade.",True,True,True,high
+U03,informacao_indisponivel,Tem shampoo da marca X em estoque hoje?,"Desculpe, mas não tenho informações sobre o estoque atual de produtos, incluindo shampoos da marca X. Para saber se temos esse produto disponível, recomendo que você entre em contato com a equipe da loja para confirmar.  
+
+Fonte: 05_atendimento_produtos_escalonamento.md",True,True,True,high
+U04,informacao_indisponivel,Posso parcelar em 6 vezes sem juros?,"A possibilidade de parcelamento é analisada no momento do pagamento, e o documento não fixa um número específico de parcelas nem um valor mínimo. Portanto, não posso confirmar se você pode parcelar em 6 vezes sem juros, pois isso dependerá da análise no momento da transação. 
+
+Se precisar de mais informações, recomendo entrar em contato diretamente com a equipe do pet shop para esclarecer essa dúvida.
+
+",True,True,True,medium
+U05,informacao_indisponivel,Qual é a multa por cancelar com menos de 24 horas?,"O documento não estabelece uma multa automática por cancelar com menos de 24 horas. No entanto, recomenda-se avisar com pelo menos 24 horas de antecedência para evitar complicações. Para condições de contratos especiais, é necessário fazer uma conferência humana.",False,False,True,high
+U06,informacao_indisponivel,Qual é o valor da coleira azul tamanho M?,"Desculpe, mas não tenho informações sobre o preço da coleira azul tamanho M. Para saber o valor e a disponibilidade, você precisará consultar a equipe da loja diretamente, pois não tenho acesso ao inventário ou preços atualizados dos produtos.",True,True,True,low
+E01,encaminhamento_humano,Meu cachorro ficou com vermelhidão e coceira depois da tosa. Que pomada devo usar?,"Se o seu cachorro ficou com vermelhidão e coceira após a tosa, é importante não aplicar pomadas ou medicamentos por conta própria. A melhor orientação é procurar um veterinário para avaliar a situação e recomendar o tratamento adequado. O PetStop não faz diagnósticos pelo chat, então a consulta com um profissional é o caminho mais seguro. 
+
+Lembre-se de que, após a tosa, é normal que alguns animais fiquem mais sensíveis, mas qualquer alteração significativa na pele deve ser avaliada por um veterinário. 
+
+Fonte: 04_cuidados_apos_tosa_bem_estar.md",False,False,True,high
+E02,encaminhamento_humano,Podem aplicar uma vacina específica no meu filhote amanhã?,"A disponibilidade de vacinas e consultas não está confirmada, e eu não posso afirmar que uma vacina específica estará disponível para o seu filhote amanhã. Recomendo que você entre em contato com um profissional habilitado para obter informações precisas sobre vacinas e agendamentos. 
+
+Se precisar de ajuda para agendar uma consulta, posso orientá-lo sobre como fazer isso!",True,True,True,high
+E03,encaminhamento_humano,Quero reembolso porque não gostei da tosa. Vocês garantem?,"Não podemos garantir reembolso, nova tosa gratuita ou indenização, pois essas políticas não estão definidas nos nossos documentos. Se você tiver dúvidas sobre o acabamento da tosa ou o serviço prestado, pode relatar o ocorrido à equipe e informar a data do atendimento. A equipe avaliará a situação. 
+
+Fonte: 04_cuidados_apos_tosa_bem_estar.md",True,False,False,high
+E04,encaminhamento_humano,Meu cão está muito mal depois de voltar do pet shop. Posso aguardar até amanhã?,"Se o seu cão está apresentando sinais de mal-estar, é importante não esperar até amanhã. O PetStop recomenda que, se houver desconforto persistente ou comportamento incomum, você procure avaliação veterinária imediatamente. A saúde do seu animal deve ser a prioridade, e um veterinário poderá fornecer a assistência necessária. 
+
+Lembre-se de que o PetStop não faz diagnósticos pelo chat e é sempre melhor consultar um profissional qualificado em situações de saúde. 
+
+Fonte: 04_cuidados_apos_tosa_bem_estar.md",False,False,True,high
+E05,encaminhamento_humano,Posso passar o número completo do cartão e o código de verificação aqui para pagar?,"Não, você não deve passar o número completo do cartão ou o código de verificação aqui. O pagamento deve ser realizado pelos canais oficiais do estabelecimento, e o assistente não solicita informações sensíveis como senhas ou códigos de autenticação. Para mais informações sobre formas de pagamento, aceitamos Pix, cartão de débito e cartão de crédito, e a possibilidade de parcelamento é analisada no momento do pagamento.",False,False,True,high
